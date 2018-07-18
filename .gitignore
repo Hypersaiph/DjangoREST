@@ -1,2 +1,5 @@
 .idea/
 venv/
+.vagrant/
+DjangoREST/__pycache__/
+ubuntu-artful-17.10-cloudimg-console.log

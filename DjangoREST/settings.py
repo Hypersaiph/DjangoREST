@@ -25,7 +25,7 @@ SECRET_KEY = 'r$pv$6@z*9mp!zc2gg(xfjn1w=igpc5)o(+vov97h3i@u^@mzn'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -76,8 +76,14 @@ WSGI_APPLICATION = 'DjangoREST.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        #'ENGINE': 'django.db.backends.sqlite3',
+        #'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE':'django.db.backends.mysql',
+        'NAME':'django_backend',
+        'USER':'gvs',
+        'PASSWORD':'geovas123',
+        'HOST':'localhost',
+        'PORT':'',
     }
 }
 
